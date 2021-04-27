@@ -1,7 +1,20 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import styled from "styled-components";
+import { auth, provider } from "../firebase";
 
 const Header = (props) => {
+  // signing in with popup
+  const handleAuth = () => {
+    auth
+      .signInWithPopup(provider)
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+    //with this code above, you only get the user data but it is not stored
+  };
   return (
     <Nav>
       <Logo>
@@ -33,7 +46,7 @@ const Header = (props) => {
           <span>SERIES</span>
         </a>
       </NavMenu>
-      <Login>Login</Login>
+      <Login onClick={handleAuth}>Login</Login>
     </Nav>
   );
 };
