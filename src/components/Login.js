@@ -49,7 +49,6 @@ const BgImage = styled.div`
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -90,7 +89,7 @@ const SignUp = styled.a`
 
 const Description = styled.p`
   color: hsla(0, 0%, 95.3%, 1);
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: 1.5px;
   line-height: 1.5;
   margin: 0 0 24px;
