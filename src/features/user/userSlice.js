@@ -17,5 +17,19 @@ const userSlice = createSlice({
       state.email = action.payload.email;
       state.photo = action.payload.photo;
     },
+    //when the user logs out, whip their data
+    setSignOutState: (state) => {
+      state.name = null;
+      state.email = null;
+      state.photo = null;
+    },
   },
 });
+//we can now access all name, email and photo in any other files
+export const { setUserLoginDetails, setSignOutState } = userSlice.actions;
+
+export const selectUserName = (state) => state.user.name;
+export const selectUserEmail = (state) => state.user.email;
+export const selectUserPhoto = (state) => state.user.photo;
+
+export default userSlice.reducer;
