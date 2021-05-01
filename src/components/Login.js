@@ -52,7 +52,7 @@ const BgImage = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  z-index: -1;
+  z-index: -1; //adds on top of the image or z-index: 999 is good to to use
 `;
 
 const CTA = styled.div`
