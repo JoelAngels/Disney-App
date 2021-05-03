@@ -9,7 +9,7 @@ const initialState = {
   trending: null,
 };
 
-//get data from firebase then store it here
+//get data from firebase then store it here in redux
 
 const movieSlice = createSlice({
   name: "movie",
