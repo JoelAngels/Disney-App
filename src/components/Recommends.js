@@ -9,6 +9,7 @@ const Recommends = (props) => {
     <Container>
       <h4 style={{ fontFamily: "Poppins, sans-serif" }}>Recommended for You</h4>
       <Content>
+        {/* if we have movies, lets map through it, wrap each movie and the actually index for the key, give me the movie id and link it to the detail page of that video + the id,  */}
         {movies &&
           movies.map((movie, key) => (
             <Wrap key={key}>
