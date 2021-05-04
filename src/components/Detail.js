@@ -3,13 +3,13 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import db from "../firebase";
 
-const Detail = (props) => {
+const Detail = () => {
   //id of the movie
 
   const { id } = useParams();
   const [detailData, setDetailData] = useState({});
 
-  //updated based on id changing
+  //lets get the id of the movie then if its exists gets the specific document
   useEffect(() => {
     db.collection("movies")
       .doc(id)
@@ -24,7 +24,7 @@ const Detail = (props) => {
       .catch((error) => {
         alert("Error getting document", error);
       });
-  }, [id]);
+  }, [id]); //updated based on id changing
   return (
     <Container>
       <Background>
@@ -58,6 +58,9 @@ const Detail = (props) => {
             </div>
           </GroupWatch>
         </Controls>
+
+        <SubTitle>{detailData.subTitle}</SubTitle>
+        <Description>{detailData.description}</Description>
       </ContentMeta>
     </Container>
   );
@@ -73,7 +76,7 @@ const Container = styled.div`
 
 const Background = styled.div`
   left: 0px;
-  opacity: 0.8; /* here*/
+  /* opacity: 0.8; */
   position: fixed;
   right: 0px;
   top: 0px;
@@ -95,7 +98,7 @@ const ImageTitle = styled.div`
   -webkit-box-pack: start;
   justify-content: flex-start;
   margin: 0px auto;
-  height: 30vw;
+  height: 23.5vw;
   min-height: 170px;
   padding-bottom: 24px;
   width: 100%;
@@ -209,6 +212,25 @@ const GroupWatch = styled.div`
     img {
       width: 100%;
     }
+  }
+`;
+
+export const SubTitle = styled.div`
+  color: rgb(249, 249, 249);
+  font-size: 15px;
+  min-height: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+`;
+const Description = styled.div`
+  line-height: 1.4;
+  font-size: 20px;
+  padding: 16px 0px;
+  color: rgb(249, 249, 249);
+  @media (max-width: 768px) {
+    font-size: 14px;
   }
 `;
 export default Detail;
