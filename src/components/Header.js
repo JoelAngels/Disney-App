@@ -78,23 +78,23 @@ const Header = (props) => {
               <img src="/images/home-icon.svg" alt="Home" />
               <span>HOME</span>
             </a>
-            <a>
+            <a className="hide">
               <img src="/images/search-icon.svg" alt="SEARCH" />
               <span>SEARCH</span>
             </a>
-            <a>
+            <a className="hide">
               <img src="/images/watchlist-icon.svg" alt="WATCHLIST" />
               <span>WATCHLIST</span>
             </a>
-            <a>
+            <a className="hide">
               <img src="/images/original-icon.svg" alt="ORIGINALS" />
               <span>ORIGINALS</span>
             </a>
-            <a>
+            <a className="hide">
               <img src="/images/movie-icon.svg" alt="MOVIES" />
               <span>MOVIES</span>
             </a>
-            <a>
+            <a className="hide">
               <img src="/images/series-icon.svg" alt="SERIES" />
               <span>SERIES</span>
             </a>
@@ -201,9 +201,11 @@ const NavMenu = styled.div`
     }
   }
 
-  /* @media (max-width: 768px) {
-    display: none;
-  } */
+  @media (max-width: 768px) {
+    .hide {
+      display: none;
+    }
+  }
 `;
 
 const Login = styled.a`
