@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 //when we start everything is going to be empty
 
 const initialState = {
-  recommended: null,
+  recommend: null,
   newDisney: null,
   original: null,
   trending: null,

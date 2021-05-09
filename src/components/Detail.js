@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import db from "../firebase";
 
-const Detail = () => {
+const Detail = (props) => {
   //id of the movie
 
   const { id } = useParams();
@@ -22,7 +22,7 @@ const Detail = () => {
         }
       })
       .catch((error) => {
-        alert("Error getting document", error);
+        alert("Error getting document:", error);
       });
   }, [id]); //updated based on id changing
   return (
@@ -98,7 +98,7 @@ const ImageTitle = styled.div`
   -webkit-box-pack: start;
   justify-content: flex-start;
   margin: 0px auto;
-  height: 23.5vw;
+  height: 30vw;
   min-height: 170px;
   padding-bottom: 24px;
   width: 100%;
@@ -215,7 +215,7 @@ const GroupWatch = styled.div`
   }
 `;
 
-export const SubTitle = styled.div`
+const SubTitle = styled.div`
   color: rgb(249, 249, 249);
   font-size: 15px;
   min-height: 20px;

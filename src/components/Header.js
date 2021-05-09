@@ -37,8 +37,8 @@ const Header = (props) => {
         .then((result) => {
           setUser(result.user);
         })
-        .catch((err) => {
-          alert(err.message);
+        .catch((error) => {
+          alert(error.message);
         });
     } else if (userName) {
       auth
@@ -66,7 +66,7 @@ const Header = (props) => {
   return (
     <Nav>
       <Logo>
-        <img src="/images/logo.svg" alt="" />
+        <img src="/images/logo.svg" alt="Disney+" />
       </Logo>
       {/**If the username hasn't signed in, go ahead and show login button*/}
       {!userName ? (
@@ -75,7 +75,7 @@ const Header = (props) => {
         <>
           <NavMenu>
             <a href="/home">
-              <img src="/images/home-icon.svg" alt="Home" />
+              <img src="/images/home-icon.svg" alt="HOME" />
               <span>HOME</span>
             </a>
             <a className="hide">

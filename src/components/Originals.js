@@ -13,7 +13,7 @@ const Originals = (props) => {
           movies.map((movie, key) => (
             <Wrap key={key}>
               {movie.id}
-              <Link to={"/detail/" + movie.id}>
+              <Link to={`/detail/` + movie.id}>
                 <img src={movie.cardImg} alt={movie.title} />
               </Link>
             </Wrap>
@@ -51,12 +51,12 @@ const Wrap = styled.div`
 
   img {
     inset: 0px;
-    inset: 0px;
     display: block;
     height: 100%;
     object-fit: cover;
     opacity: 1;
     position: absolute;
+    transition: opacity 500ms ease-in-out 0s;
     width: 100%;
     z-index: 1;
     top: 0;
@@ -65,7 +65,7 @@ const Wrap = styled.div`
   &:hover {
     box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
       rgb(0 0 0 / 72%) 0px 30px 22px -10px;
-    transform: scale(1.07);
+    transform: scale(1.05);
     border-color: rgba(249, 249, 249, 0.8);
   }
 `;

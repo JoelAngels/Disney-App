@@ -14,7 +14,7 @@ const NewDisney = (props) => {
           movies.map((movie, key) => (
             <Wrap key={key}>
               {movie.id}
-              <Link to={"/detail/" + movie.id}>
+              <Link to={`/detail/` + movie.id}>
                 <img src={movie.cardImg} alt={movie.title} />
               </Link>
             </Wrap>
@@ -52,12 +52,12 @@ const Wrap = styled.div`
 
   img {
     inset: 0px;
-    inset: 0px;
     display: block;
     height: 100%;
     object-fit: cover;
     opacity: 1;
     position: absolute;
+    transition: opacity 500ms ease-in-out 0s;
     width: 100%;
     z-index: 1;
     top: 0;
