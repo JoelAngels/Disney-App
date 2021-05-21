@@ -1,6 +1,6 @@
-# Gmail-Application
+# Disney-Application
 
-__Live Application__ - [Gmail App](https://clone-77e58.web.app/)
+Live Application - [Disney App](https://disney-joel.web.app/)
 
 ### Table of Contents
 
@@ -15,15 +15,15 @@ Here are sections headers that will be used to reference location of destination
 
 ## Description
 
-Built this Gmail Application that has the functionality of the Real Gmail Ap where you can compose your own Email. It uses the Official Google Authentication Service when logging in and logging out
+Built this Disney App with React Hooks that displays the latest movies, animation and tv series data from Firebase.
 
 #### Technologies
 
-- ⚛ ReactJS / REDUX / React-Router / Hooks /
+- ⚛ ReactJS / Context API / React-Router / Hooks /
 - 🖥 HTML / CSS
-- 🎨 Material UI /
+- 🎨 Material UI / Carousel / Firebase / Firestore
 
-[Back To The Top](#Gmail-Application)
+[Back To The Top](#Disney-Application)
 
 ---
 
@@ -35,15 +35,11 @@ Built this Gmail Application that has the functionality of the Real Gmail Ap whe
 
 - Run `npm install` to install the dependencies
 
-- Run `npm start` to start the Gmail Project
+- Run `npm start` to start the Disney Project
 
-- When the App is loaded, you will need to Login with your Google Account to have access of the Application
+- When the App is loaded, you will need to `Login` with your `Google Account` to have access of the Application
 
-- Each User can compose their own Email and it will display the Email at the top of the inbox section which can be clicked to display the data of the Message
-
-- When a User wants to LogOut, the user needs to click on the Avatar Icon that display their picture.
-
-[Back To The Top](#Gmail-Application)
+[Back To The Top](#Disney-Application)
 
 ---
 
@@ -51,13 +47,13 @@ Built this Gmail Application that has the functionality of the Real Gmail Ap whe
 
 Copyright (©) [2021] [JoelAngel]
 
-[Back To The Top](#Gmail-Application)
+[Back To The Top](#Disney-Application)
 
 ---
 
 ## Author Info
 
-- LinkedIn - [linkedIn](https://www.linkedin.com/in/joel-angel-4b05141a3/)
+- LinkedIn - [linkedIn](https://www.linkedin.com/in/joel-angel-/)
 - Website - [JoelAngel](https://joelangel.web.app)
 
-[Back To The Top](#Gmail-Application)
+[Back To The Top](#Disney-Application)
