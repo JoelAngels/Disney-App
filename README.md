@@ -37,7 +37,7 @@ Built this Disney App with React Hooks that displays the latest movies, animatio
 
 - Run `npm start` to start the Disney Project
 
-- When the App is loaded, you will need to `Login` with your `Google Account` to have access of the Application
+- When the App is loaded, you will need to hover on the avatar url to `Login`and out with your `Google Account` to have access of the Application
 
 [Back To The Top](#Disney-Application)
 
